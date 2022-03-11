@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./HorseFavicon.png">
+    <link rel="apple-touch-icon" href="./HorseFaviconiOS.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="./HorseFaviconAndroid.png" sizes="192x192">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        // リダイレクト用プログラム
+        // 複数のURLからランダムに選択してリダイレクトする
+        f_redirect();
+        
+        function f_redirect() {
+          // 下のクォーテーション内('')にリダイレクトしたいURLを記述
+          // 最後の行末にカンマ(,)は不要
+          var arr = [
+            'https://forms.gle/nUUStfQvH3p4ut1V9',
+            'https://forms.gle/cXD3YJwCdHwGSRWJA',
+            'https://forms.gle/FPXbcabDX1PHVqZQA',
+            'https://forms.gle/zzDv57FqSLmPYEQBA',
+            'https://forms.gle/ZVjsJ4guMBhm914f6',
+          ];
+          var num = arr.length;
+          if (arr.length == 0) return false;
+        
+          // 0 から (arr.length - 1) の乱数を取得
+          var num = Math.floor(Math.random() * arr.length);
+          location.href = arr[num]; // リダイレクト
+        }
+        </script>
+        
+</head>
+
+<body>
+    
+</body>
+
+</html>
